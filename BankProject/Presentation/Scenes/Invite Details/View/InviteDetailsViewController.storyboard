@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Invite Details View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="InviteDetailsViewController" id="Y6W-OH-hqX" customClass="InviteDetailsViewController" customModule="BankProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="FvK-Nm-9e0">
+                                <rect key="frame" x="24" y="439.00000000000006" width="345" height="231.66666666666669"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SaE-f5-1zI">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="50"/>
+                                        <color key="backgroundColor" red="0.2156862745" green="0.31764705879999999" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="72I-0I-nIP"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Share invitation code ">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <color key="baseForegroundColor" red="0.0" green="0.5568627451" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onShare:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bCH-hl-6dS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Epu-F3-TS1">
+                                        <rect key="frame" x="0.0" y="70" width="345" height="50"/>
+                                        <color key="backgroundColor" red="0.2156862745" green="0.31764705879999999" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="9yy-yu-JPd"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Send invitation to contacts">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <color key="baseForegroundColor" red="0.0" green="0.5568627451" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onSend:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="c38-Vw-esn"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⎯ Or send invitation code ⎯" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZO7-Md-fOq">
+                                        <rect key="frame" x="0.0" y="140" width="345" height="21.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYq-Bq-Ibw">
+                                        <rect key="frame" x="0.0" y="181.66666666666663" width="345" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="bD1-Bk-Rlh"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Qer2FJD">
+                                            <color key="baseForegroundColor" red="0.0" green="0.5568627451" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="animateCopyText:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="P5x-XM-54K"/>
+                                            <action selector="copyText:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="z2M-I5-cgz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vkp-8X-fDT">
+                                <rect key="frame" x="24" y="189" width="345" height="200"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_in_fr" translatesAutoresizingMaskIntoConstraints="NO" id="em9-qZ-3OE">
+                                        <rect key="frame" x="5" y="5" width="335" height="190"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2156862745" green="0.31764705879999999" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="em9-qZ-3OE" secondAttribute="trailing" constant="5" id="B51-JZ-kP7"/>
+                                    <constraint firstItem="em9-qZ-3OE" firstAttribute="leading" secondItem="vkp-8X-fDT" secondAttribute="leading" constant="5" id="CeJ-Zq-b1y"/>
+                                    <constraint firstItem="em9-qZ-3OE" firstAttribute="top" secondItem="vkp-8X-fDT" secondAttribute="top" constant="5" id="Q3L-hd-iIY"/>
+                                    <constraint firstAttribute="bottom" secondItem="em9-qZ-3OE" secondAttribute="bottom" constant="5" id="got-aQ-2MJ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x62-IM-v5m">
+                                <rect key="frame" x="20" y="89" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="32K-sc-a7p"/>
+                                    <constraint firstAttribute="width" constant="20" id="azD-ZC-9GC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ic_left_arrow"/>
+                                <connections>
+                                    <action selector="onBack:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="jJD-Ql-afe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.18039215689999999" green="0.26274509800000001" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="FvK-Nm-9e0" secondAttribute="trailing" constant="24" id="1Cf-vP-093"/>
+                            <constraint firstItem="x62-IM-v5m" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="3R9-97-g7H"/>
+                            <constraint firstItem="x62-IM-v5m" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="7rj-zn-ayn"/>
+                            <constraint firstItem="vkp-8X-fDT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="9II-9f-Y1R"/>
+                            <constraint firstItem="vkp-8X-fDT" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.234742" id="Cbq-ve-dCa"/>
+                            <constraint firstItem="FvK-Nm-9e0" firstAttribute="top" secondItem="vkp-8X-fDT" secondAttribute="bottom" constant="50" id="IVQ-F3-0Cz"/>
+                            <constraint firstItem="FvK-Nm-9e0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="Whx-OG-sSt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vkp-8X-fDT" secondAttribute="trailing" constant="24" id="pDD-NF-aE8"/>
+                            <constraint firstItem="vkp-8X-fDT" firstAttribute="top" secondItem="x62-IM-v5m" secondAttribute="bottom" constant="80" id="uDu-ak-nLK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pasteboardButton" destination="QYq-Bq-Ibw" id="4pj-Lt-jfX"/>
+                        <outlet property="pictureView" destination="vkp-8X-fDT" id="GLK-0d-d1c"/>
+                        <outlet property="sendButton" destination="Epu-F3-TS1" id="jwp-Ai-7Ag"/>
+                        <outlet property="shareButton" destination="SaE-f5-1zI" id="U2b-52-46t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74.045801526717554" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_left_arrow" width="20" height="20"/>
+        <image name="img_in_fr" width="793" height="596"/>
+    </resources>
+</document>

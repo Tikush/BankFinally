@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="143" id="Bg4-Ht-2nN" customClass="CompanyCell" customModule="BankProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="143"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bg4-Ht-2nN" id="HUK-sB-Owf">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="143"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyY-in-iTj">
+                        <rect key="frame" x="79" y="23" width="217" height="19.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Px8-eh-riJ">
+                        <rect key="frame" x="24" y="10" width="45" height="45"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account_home" translatesAutoresizingMaskIntoConstraints="NO" id="2G5-TG-tqG">
+                                <rect key="frame" x="5" y="5" width="35" height="35"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="2G5-TG-tqG" secondAttribute="bottom" constant="5" id="5xM-Xv-cBq"/>
+                            <constraint firstAttribute="height" constant="45" id="E5M-V5-Rqd"/>
+                            <constraint firstItem="2G5-TG-tqG" firstAttribute="top" secondItem="Px8-eh-riJ" secondAttribute="top" constant="5" id="FQx-xN-66O"/>
+                            <constraint firstAttribute="trailing" secondItem="2G5-TG-tqG" secondAttribute="trailing" constant="5" id="Gjc-DO-LR0"/>
+                            <constraint firstAttribute="width" constant="45" id="X5C-oN-P9u"/>
+                            <constraint firstItem="2G5-TG-tqG" firstAttribute="leading" secondItem="Px8-eh-riJ" secondAttribute="leading" constant="5" id="fxi-1p-DpF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.18039215689999999" green="0.26274509800000001" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="Px8-eh-riJ" firstAttribute="leading" secondItem="HUK-sB-Owf" secondAttribute="leading" constant="24" id="JqL-v3-YUU"/>
+                    <constraint firstItem="Px8-eh-riJ" firstAttribute="top" secondItem="HUK-sB-Owf" secondAttribute="top" constant="10" id="Nvv-HX-gDK"/>
+                    <constraint firstItem="CyY-in-iTj" firstAttribute="leading" secondItem="Px8-eh-riJ" secondAttribute="trailing" constant="10" id="Vne-cA-glV"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Px8-eh-riJ" secondAttribute="bottom" constant="10" id="ixs-UL-YqT"/>
+                    <constraint firstItem="CyY-in-iTj" firstAttribute="centerY" secondItem="Px8-eh-riJ" secondAttribute="centerY" id="rK2-CE-PKL"/>
+                    <constraint firstAttribute="trailing" secondItem="CyY-in-iTj" secondAttribute="trailing" constant="24" id="szm-r9-Fil"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="LM5-5T-w2u"/>
+            <connections>
+                <outlet property="lineView" destination="Px8-eh-riJ" id="Veu-Rd-4rN"/>
+                <outlet property="picture" destination="2G5-TG-tqG" id="n42-WX-9gn"/>
+                <outlet property="titleLabel" destination="CyY-in-iTj" id="5MN-Mm-cnb"/>
+            </connections>
+            <point key="canvasLocation" x="60" y="7"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="account_home" width="29" height="29"/>
+    </resources>
+</document>

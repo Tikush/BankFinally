@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="uca-no-qR2" customClass="OfferItemCell" customModule="BankProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="276" height="306"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="W9N-7X-zW6">
+                <rect key="frame" x="0.0" y="0.0" width="276" height="306"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nti-Fm-AZi">
+                        <rect key="frame" x="0.0" y="0.0" width="276" height="160"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="160" id="o9V-y5-db8"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELc-3Y-4bI">
+                        <rect key="frame" x="20" y="175" width="236" height="20.333333333333343"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMJ-ix-aQs">
+                        <rect key="frame" x="20" y="200.33333333333334" width="236" height="15.666666666666657"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ELc-3Y-4bI" firstAttribute="top" secondItem="Nti-Fm-AZi" secondAttribute="bottom" constant="15" id="04I-uy-ZuN"/>
+                    <constraint firstItem="Nti-Fm-AZi" firstAttribute="top" secondItem="W9N-7X-zW6" secondAttribute="top" id="8vh-tP-oiH"/>
+                    <constraint firstItem="Nti-Fm-AZi" firstAttribute="leading" secondItem="W9N-7X-zW6" secondAttribute="leading" id="B55-bI-pfc"/>
+                    <constraint firstAttribute="trailing" secondItem="ELc-3Y-4bI" secondAttribute="trailing" constant="20" id="Emj-W7-q2W"/>
+                    <constraint firstItem="fMJ-ix-aQs" firstAttribute="top" secondItem="ELc-3Y-4bI" secondAttribute="bottom" constant="5" id="Ham-Vy-iUo"/>
+                    <constraint firstAttribute="trailing" secondItem="Nti-Fm-AZi" secondAttribute="trailing" id="J7u-32-iQs"/>
+                    <constraint firstAttribute="trailing" secondItem="fMJ-ix-aQs" secondAttribute="trailing" constant="20" id="M37-Ga-Lrp"/>
+                    <constraint firstItem="fMJ-ix-aQs" firstAttribute="leading" secondItem="W9N-7X-zW6" secondAttribute="leading" constant="20" id="Vui-eK-Ui2"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fMJ-ix-aQs" secondAttribute="bottom" constant="15" id="ZEY-eG-8cM"/>
+                    <constraint firstItem="ELc-3Y-4bI" firstAttribute="leading" secondItem="W9N-7X-zW6" secondAttribute="leading" constant="20" id="dSk-IP-AcO"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" red="0.2156862745" green="0.31764705879999999" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <size key="customSize" width="276" height="306"/>
+            <connections>
+                <outlet property="contentLabel" destination="fMJ-ix-aQs" id="oWb-z0-fDc"/>
+                <outlet property="picture" destination="Nti-Fm-AZi" id="T6M-w3-F8w"/>
+                <outlet property="titleLabel" destination="ELc-3Y-4bI" id="9ow-tx-cUN"/>
+            </connections>
+            <point key="canvasLocation" x="500.76335877862596" y="46.478873239436624"/>
+        </collectionViewCell>
+    </objects>
+</document>

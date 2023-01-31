@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="233" id="KGk-i7-Jjw" customClass="InviteCell" customModule="BankProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="233"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="377" height="233"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j0N-Qh-jKQ" userLabel="Invite View">
+                        <rect key="frame" x="16" y="93" width="345" height="120"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_invite_friends" translatesAutoresizingMaskIntoConstraints="NO" id="7rP-1i-CKD">
+                                <rect key="frame" x="45" y="40" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="4sK-Zg-MeG"/>
+                                    <constraint firstAttribute="height" constant="40" id="pry-Fe-C3l"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rug-hV-dIJ">
+                                <rect key="frame" x="200.33333333333334" y="42.666666666666657" width="99.666666666666657" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click here">
+                                    <color key="baseForegroundColor" red="0.0" green="0.5568627451" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dQL-q5-YV1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2156862745" green="0.31764705879999999" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7rP-1i-CKD" firstAttribute="leading" secondItem="j0N-Qh-jKQ" secondAttribute="leading" constant="45" id="HjK-m4-tcT"/>
+                            <constraint firstItem="Rug-hV-dIJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7rP-1i-CKD" secondAttribute="trailing" constant="20" id="J57-7t-G1f"/>
+                            <constraint firstItem="7rP-1i-CKD" firstAttribute="centerY" secondItem="j0N-Qh-jKQ" secondAttribute="centerY" id="JUy-fS-8IP"/>
+                            <constraint firstItem="Rug-hV-dIJ" firstAttribute="centerY" secondItem="7rP-1i-CKD" secondAttribute="centerY" id="POb-iP-fsq"/>
+                            <constraint firstAttribute="height" constant="120" id="hAO-sa-p1I"/>
+                            <constraint firstAttribute="trailing" secondItem="Rug-hV-dIJ" secondAttribute="trailing" constant="45" id="nhA-kb-YhD"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite Friend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9BA-QR-GSe">
+                        <rect key="frame" x="20" y="15" width="337" height="58"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.18039215689999999" green="0.26274509800000001" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="9BA-QR-GSe" secondAttribute="trailing" constant="20" id="8zY-9h-Djw"/>
+                    <constraint firstItem="j0N-Qh-jKQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="G1s-6L-bAq"/>
+                    <constraint firstItem="9BA-QR-GSe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="G3j-Fg-kWJ"/>
+                    <constraint firstAttribute="trailing" secondItem="j0N-Qh-jKQ" secondAttribute="trailing" constant="16" id="eS7-rb-Rye"/>
+                    <constraint firstItem="j0N-Qh-jKQ" firstAttribute="top" secondItem="9BA-QR-GSe" secondAttribute="bottom" constant="20" id="ffd-sp-3js"/>
+                    <constraint firstAttribute="bottom" secondItem="j0N-Qh-jKQ" secondAttribute="bottom" constant="20" id="l41-Ba-C5s"/>
+                    <constraint firstItem="9BA-QR-GSe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="yPF-Ds-NGq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="clickButton" destination="Rug-hV-dIJ" id="vxH-w4-25R"/>
+                <outlet property="inviteView" destination="j0N-Qh-jKQ" id="p9p-mY-kCi"/>
+            </connections>
+            <point key="canvasLocation" x="144" y="46"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_invite_friends" width="20" height="20"/>
+    </resources>
+</document>

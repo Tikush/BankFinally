@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pay View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PayViewController" id="Y6W-OH-hqX" customClass="PayViewController" customModule="BankProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0pe-le-8fe">
+                                <rect key="frame" x="0.0" y="172.33333333333331" width="393" height="645.66666666666674"/>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.26274509800000001" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay a bill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QK-tD-M8Y">
+                                <rect key="frame" x="26" y="83" width="341" height="26.333333333333329"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Pay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1mH-9U-O3h">
+                                <rect key="frame" x="24" y="129.33333333333334" width="78" height="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7v-Kb-M3K">
+                                <rect key="frame" x="218" y="126" width="151" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="11x-3C-KDb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Alll categories →">
+                                    <color key="baseForegroundColor" red="0.0" green="0.5568627451" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onCategories:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wvC-JI-aVk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.18039215689999999" green="0.26274509800000001" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0pe-le-8fe" secondAttribute="trailing" id="4nX-D6-iPw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3QK-tD-M8Y" secondAttribute="trailing" constant="26" id="6ik-K5-odX"/>
+                            <constraint firstItem="Z7v-Kb-M3K" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1mH-9U-O3h" secondAttribute="trailing" constant="20" id="BxL-ra-0Qx"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="0pe-le-8fe" secondAttribute="bottom" id="CPG-A1-uS0"/>
+                            <constraint firstItem="1mH-9U-O3h" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="DpZ-zj-B13"/>
+                            <constraint firstItem="1mH-9U-O3h" firstAttribute="top" secondItem="3QK-tD-M8Y" secondAttribute="bottom" constant="20" id="E2l-gt-Quy"/>
+                            <constraint firstItem="3QK-tD-M8Y" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="24" id="JIg-D4-oft"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Z7v-Kb-M3K" secondAttribute="trailing" constant="24" id="LW0-M3-yZX"/>
+                            <constraint firstItem="0pe-le-8fe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ewf-jj-QwQ"/>
+                            <constraint firstItem="Z7v-Kb-M3K" firstAttribute="centerY" secondItem="1mH-9U-O3h" secondAttribute="centerY" id="hah-kN-Bnr"/>
+                            <constraint firstItem="0pe-le-8fe" firstAttribute="top" secondItem="1mH-9U-O3h" secondAttribute="bottom" constant="20" id="iWz-tK-car"/>
+                            <constraint firstItem="3QK-tD-M8Y" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="26" id="qUK-FI-9JD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="0pe-le-8fe" id="PWT-6U-W7Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="90.839694656488547" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+</document>

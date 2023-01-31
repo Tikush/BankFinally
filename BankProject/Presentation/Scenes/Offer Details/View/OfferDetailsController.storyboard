@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Offer Details Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="OfferDetailsController" id="Y6W-OH-hqX" customClass="OfferDetailsController" customModule="BankProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r2T-AO-H4h">
+                                <rect key="frame" x="0.0" y="124" width="393" height="694"/>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.26274509800000001" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Gf-Ws-K0c">
+                                <rect key="frame" x="20" y="89" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="WMy-d1-Qhr"/>
+                                    <constraint firstAttribute="height" constant="15" id="chf-9n-RC7"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ic_close_white"/>
+                                <connections>
+                                    <action selector="onClose:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ayM-9X-xu5"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="isc-zx-2gl">
+                                <rect key="frame" x="178" y="452.66666666666669" width="37" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="f2u-hh-cga"/>
+                                    <constraint firstAttribute="height" constant="37" id="fDH-if-qk2"/>
+                                </constraints>
+                                <color key="color" red="0.0" green="0.5568627451" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.18039215689999999" green="0.26274509800000001" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="r2T-AO-H4h" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Jnr-RJ-wjk"/>
+                            <constraint firstItem="0Gf-Ws-K0c" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Tyy-40-iWp"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="r2T-AO-H4h" secondAttribute="trailing" id="g1q-Ff-nqf"/>
+                            <constraint firstItem="isc-zx-2gl" firstAttribute="centerX" secondItem="r2T-AO-H4h" secondAttribute="centerX" id="hfE-8i-1sG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="r2T-AO-H4h" secondAttribute="bottom" id="mB4-PI-DB6"/>
+                            <constraint firstItem="0Gf-Ws-K0c" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="oj7-tV-twM"/>
+                            <constraint firstItem="isc-zx-2gl" firstAttribute="centerY" secondItem="r2T-AO-H4h" secondAttribute="centerY" id="xd6-42-f3f"/>
+                            <constraint firstItem="r2T-AO-H4h" firstAttribute="top" secondItem="0Gf-Ws-K0c" secondAttribute="bottom" constant="20" id="zR4-0H-y1k"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loading" destination="isc-zx-2gl" id="rus-O4-r8n"/>
+                        <outlet property="webView" destination="r2T-AO-H4h" id="cc6-OJ-rsH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_close_white" width="29" height="29"/>
+    </resources>
+</document>
