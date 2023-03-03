@@ -22,7 +22,7 @@ protocol CoordinatorProtocol: AnyObject {
     func goToCategories()
     func goToCompanies(with: String)
     func goToCompanyDetails(with name: String, imageUrl: String)
-    func goToPayDetails(with name: String, imageUrl: UIImage)
+    func goToPayDetails(with name: String, image: UIImage)
     func goToPaySuccess()
         
     func goToHelpDetails()
@@ -54,7 +54,7 @@ extension CoordinatorProtocol {
     func goToCategories() {}
     func goToCompanies(with: String) {}
     func goToCompanyDetails(with name: String, imageUrl: String) {}
-    func goToPayDetails(with name: String, imageUrl: UIImage) {}
+    func goToPayDetails(with name: String, image: UIImage) {}
     func goToPaySuccess() {}
     
     func goToHelpDetails() {}

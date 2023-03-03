@@ -52,9 +52,11 @@ final class PayCoordinator: CoordinatorProtocol {
         navigationController?.pushViewController(vc, animated: true)
     }
     
-    func goToPayDetails(with name: String, imageUrl: UIImage) {
+    func goToPayDetails(with name: String, image: UIImage) {
         let vc = PayDetailsViewController.instantiateFromStoryboard()
         vc.coordinator = self
+        vc.companyName = name
+        vc.image = image
         navigationController?.pushViewController(vc, animated: true)
     }
     

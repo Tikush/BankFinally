@@ -24,7 +24,7 @@ class PayDetailsViewController: BaseViewController {
     
     // MARK: - Internal Properties
     
-    var imageUrl: String?
+    var image: UIImage?
     var companyName: String?
     
     // MARK: - Life Cyrcle
@@ -40,7 +40,6 @@ class PayDetailsViewController: BaseViewController {
         closeKeyboard()
     }
     
-    
     private func setupLayout() {
         lineView.customCornerView(cornerRadius: 7, borderWidth: 1, borderColor: Constants.Color.blueDown)
         cardView.customCornerView(cornerRadius: 7, borderWidth: 0.2, borderColor: Constants.Color.blueDown)
@@ -49,8 +48,7 @@ class PayDetailsViewController: BaseViewController {
     
     private func setCompanyDetails() {
         nameLabel.text = companyName ?? ""
-        let url = URL(string: imageUrl ?? "")
-        picture.kf.setImage(with: url)
+        picture.image = image
     }
     
     private func configureViewModel() {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC030A9C298EEC8B00C0AC2E /* ContactManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC030A9B298EEC8B00C0AC2E /* ContactManager.swift */; };
 		AC23815E297F2C6500BBDB33 /* HelpDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC23815D297F2C6500BBDB33 /* HelpDetailsViewController.storyboard */; };
 		AC238160297F2C7200BBDB33 /* HelpDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23815F297F2C7200BBDB33 /* HelpDetailsViewController.swift */; };
 		AC238162297F2D9300BBDB33 /* InviteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC238161297F2D9300BBDB33 /* InviteViewModel.swift */; };
@@ -58,7 +59,6 @@
 		ACA7C74F2981317C00889B15 /* ContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA7C74D2981317C00889B15 /* ContactCell.xib */; };
 		ACA7C7512981333600889B15 /* ContactsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA7C7502981333600889B15 /* ContactsListViewModel.swift */; };
 		ACA7C753298135F300889B15 /* ContactsListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA7C752298135F300889B15 /* ContactsListDataSource.swift */; };
-		ACA7C755298159DD00889B15 /* ContactManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA7C754298159DD00889B15 /* ContactManager.swift */; };
 		ACA7C75729815A0A00889B15 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA7C75629815A0A00889B15 /* Contact.swift */; };
 		ACA7C75929815F1F00889B15 /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA7C75829815F1F00889B15 /* ContactViewModel.swift */; };
 		ACA7C75B29818F7F00889B15 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA7C75A29818F7F00889B15 /* UIImageView+Extension.swift */; };
@@ -141,6 +141,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC030A9B298EEC8B00C0AC2E /* ContactManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactManager.swift; sourceTree = "<group>"; };
 		AC23815D297F2C6500BBDB33 /* HelpDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HelpDetailsViewController.storyboard; sourceTree = "<group>"; };
 		AC23815F297F2C7200BBDB33 /* HelpDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpDetailsViewController.swift; sourceTree = "<group>"; };
 		AC238161297F2D9300BBDB33 /* InviteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteViewModel.swift; sourceTree = "<group>"; };
@@ -194,7 +195,6 @@
 		ACA7C74D2981317C00889B15 /* ContactCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactCell.xib; sourceTree = "<group>"; };
 		ACA7C7502981333600889B15 /* ContactsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListViewModel.swift; sourceTree = "<group>"; };
 		ACA7C752298135F300889B15 /* ContactsListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListDataSource.swift; sourceTree = "<group>"; };
-		ACA7C754298159DD00889B15 /* ContactManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactManager.swift; path = ../../../../../../Documents/ContactManager.swift; sourceTree = "<group>"; };
 		ACA7C75629815A0A00889B15 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		ACA7C75829815F1F00889B15 /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
 		ACA7C75A29818F7F00889B15 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
@@ -736,8 +736,8 @@
 			children = (
 				ACDF74EE297B48A800669311 /* PaymentManager.swift */,
 				ACDF7509297EFA8500669311 /* OfferManager.swift */,
-				ACA7C754298159DD00889B15 /* ContactManager.swift */,
 				AC7DAE2D2982DD6700D28EDD /* HelpManager.swift */,
+				AC030A9B298EEC8B00C0AC2E /* ContactManager.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -1228,7 +1228,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACA7C755298159DD00889B15 /* ContactManager.swift in Sources */,
 				ACDF750C297EFABF00669311 /* Offer.swift in Sources */,
 				AC71B51129843126000EA24C /* CompaniesListViewController.swift in Sources */,
 				ACA7C74E2981317C00889B15 /* ContactCell.swift in Sources */,
@@ -1302,6 +1301,7 @@
 				AC7D14122985AADB000FCAAE /* Card.swift in Sources */,
 				ACDF750E297EFCA700669311 /* OfferListViewModel.swift in Sources */,
 				ACDF74B6297742F000669311 /* CardDataSource.swift in Sources */,
+				AC030A9C298EEC8B00C0AC2E /* ContactManager.swift in Sources */,
 				ACDF74962975CD3600669311 /* HomeCoordinator.swift in Sources */,
 				AC7D13FA29846B6B000FCAAE /* CompanyDetailsViewModel.swift in Sources */,
 				ACBBA22529758115005924FA /* Wellcome.swift in Sources */,

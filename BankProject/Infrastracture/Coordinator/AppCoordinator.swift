@@ -18,24 +18,24 @@ final class AppCoordinator: CoordinatorProtocol {
         self.navigationController = navigationController
     }
     
-    func start() {
-        let vc = WellcomeViewController.instantiateFromStoryboard()
-        vc.coordinator = self
-        navigationController?.pushViewController(vc, animated: true)
-        
-        window?.rootViewController = navigationController
-        window?.makeKeyAndVisible()
-    }
-    
-    //    func start() { // Temporery For load Tab Bar
-    //        let vc = MainTabBarViewController.instantiateFromStoryboard()
+    //    func start() {
+    //        let vc = WellcomeViewController.instantiateFromStoryboard()
     //        vc.coordinator = self
-    //        navigationController?.setViewControllers([vc], animated: false)
-    //        navigationController?.isNavigationBarHidden = true
+    //        navigationController?.pushViewController(vc, animated: true)
     //
     //        window?.rootViewController = navigationController
     //        window?.makeKeyAndVisible()
     //    }
+    
+    func start() { // Temporery For load Tab Bar
+        let vc = MainTabBarViewController.instantiateFromStoryboard()
+        vc.coordinator = self
+        navigationController?.setViewControllers([vc], animated: false)
+        navigationController?.isNavigationBarHidden = true
+        
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+    }
     
     func logIn(with controller: UIViewController) {
         let vc = LoginViewController.instantiateFromStoryboard()

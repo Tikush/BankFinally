@@ -58,7 +58,7 @@ class CompanyDetailsViewController: BaseViewController {
     // MARK:  - Private IBActions
     
     @IBAction func onPay(_ sender: Any) {
-        viewModel.coordinator.goToPayDetails(with: nameLabel.text ?? "", imageUrl: picture.image ?? UIImage())
+        viewModel.coordinator.goToPayDetails(with: nameLabel.text ?? "", image: picture.image ?? UIImage())
     }
     
     @IBAction func onBack(_ sender: Any) {
